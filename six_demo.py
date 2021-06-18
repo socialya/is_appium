@@ -5,7 +5,7 @@ from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from hamcrest import *
 class TestParametrize():
-    def setup_class(self):
+    def setup(self):
         disire_cap = {
             "platformName": "ANDROID",
             "platformVersion": "6.0",
@@ -37,7 +37,8 @@ class TestParametrize():
         # assert_that(current_price,close_to(current_price,current_price*0.1))
     # def teardown(self):
     #     self.driver.back()
-    def teardown_class(self):
+    def teardown(self):
         self.driver.quit()
     # def teardown_class(self):
-    #     self.driver.quit()
+    #     self.driver
+    #     quit()
