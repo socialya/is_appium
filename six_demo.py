@@ -19,6 +19,7 @@ class TestParametrize():
             "skipDeviceInitialization": "true",
             "unicodeKeyboard":True,
             'resetKeyboard':True,
+            "avd":"Pixel_2_API_23_2",
             "apk":f"{os.path.abspath(os.curdir)}/app/xueqiu.apk"
             # 不会停止app
         }
