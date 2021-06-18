@@ -35,8 +35,8 @@ class TestParametrize():
         # current_price=self.driver.find_element(MobileBy.XPATH,f"//*[@text='{value}']/../../..//*[@resource-id='com.xueqiu.android:id/current_price']").text
         # current_price=float(current_price)
         # assert_that(current_price,close_to(current_price,current_price*0.1))
-    def teardown(self):
-        self.driver.back()
+    # def teardown(self):
+    #     self.driver.back()
     def teardown_class(self):
         self.driver.quit()
     # def teardown_class(self):
