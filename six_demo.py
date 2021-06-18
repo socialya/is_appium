@@ -1,3 +1,5 @@
+import os
+
 import pytest
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
@@ -16,7 +18,8 @@ class TestParametrize():
             # "dontStopAppOnReset": True,
             "skipDeviceInitialization": "true",
             "unicodeKeyboard":True,
-            'resetKeyboard':True
+            'resetKeyboard':True,
+            "apk":f"{os.path.abspath(os.curdir)}/app/xueqiu.apk"
             # 不会停止app
         }
         self.driver=webdriver.Remote("http://127.0.0.1:4723/wd/hub",disire_cap)
